@@ -33,25 +33,25 @@ main {
   margin-top: 50px;
   border-radius: 20px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .dados {
-  margin-left: 3%;
-  margin-top: 5%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-self: flex-start;
-  width: 60%;
-  max-height: 89%;
+  width: fit-content;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .city {
   color: rgb(165, 175, 214);
   font-size: 50px;
-  align-self: center;
+  align-self: flex-start;
 }
 
 .description {
@@ -63,15 +63,11 @@ main {
   color: aliceblue;
   font-size: 50px;
   max-width: fit-content;
-  margin-bottom: -10px;
 }
 
 .feels-like {
-  margin-left: -105%;
-  margin-top: 115%;
   color: aliceblue;
   width: max-content;
-  margin-bottom: -10px;
 }
 
 .icon {
