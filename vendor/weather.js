@@ -34,15 +34,22 @@ function fetchApi(url) {
 
 
 			details.innerHTML = `
+			<div class="column first-column">
 				<p class='title_details main first'>Umidade: <span>${data.main.humidity}%</span></p>
 				<p class='title_details main'>Mínima: <span>${(data.main.temp_min).toFixed(0)}°C</span></p>
 				<p class='title_details main'>Maxíma: <span>${(data.main.temp_max).toFixed(0)}°C</span></p>
-				<p class='title_details main'>Visibilidade: <span>${(data.visibility/1000)} KM</span></p>
-				
+			</div>
+
+			<div class="column second-column">
+				<p class='title_details main'>Visibilidade: <span>${(data.visibility/1000)} KM</span></p>	
 				<p class='title_details wind first'>Velocidade do vento: <span>${data.wind.speed} M/S</span></p>
 				<p class='title_details wind'>Direção do Vento: <span>${data.wind.deg}ºC</span></p>
+			</div>
+			
+			<div class="column third-column">
 				<p class='title_details wind'>Pressão atmosférica: <span>${data.main.pressure}hP</span></p>
 				<p class='title_details wind'>Nublagem: <span>${data.clouds.all}%</span></p>
+			</div>	
 				`
 				
 		})
